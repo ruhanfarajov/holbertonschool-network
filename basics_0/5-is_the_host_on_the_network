@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+#this code is used to ping everything
+
+IP_ADDR=$1
+
+ping -c 4  "$IP_ADDR"

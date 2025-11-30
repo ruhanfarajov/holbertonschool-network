@@ -3,4 +3,8 @@
 
 IP_ADDR=$1
 
-ping -c 4  "$IP_ADDR"
+if [ - "$IP_ADDR" ]; then
+	echo "Usage: 5-is_the_host_on_the_network {IP_ADDRESS}"
+else
+	ping  "$IP_ADDR"
+fi 
